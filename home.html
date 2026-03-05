@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-menu-item">
+            <a class="home-icon" href="/home.html"></a>
+            <div class="selected-nav-item-home"></div>
+        </div>
+        <div class="nav-menu-item">
+            <a class="profile-icon" href="/profile.html"></a>
+        </div>
+        <div class="nav-menu-item">
+            <a class="add-icon" href="#"></a>
+        </div>
+    </nav>
+    <main class="feed-container">
+        <div class="post">
+            <div class="post-header">
+                <div class="post-author">
+                    <img class="post-profile-icon" src="images/profile-photo.jpg" alt="">
+                    <p>Ваня Денисов</p>
+                </div>
+                <button>
+                    <i class="fa-solid fa-pen" style="color: rgb(183, 183, 183);"></i>
+                </button>
+            </div>
+            <div class="post-content">
+                <img src="images/photo-example.jpg" alt="">
+                <span class="post-photo-count">1/3</span>
+                <button name="next-photo" class="post-content-next "></button>
+            </div>
+            <button name="like" class="like-btn">
+                <i class="fa-solid fa-heart" style="color: rgb(230, 64, 33);"></i> 203
+            </button>
+            <div class="post-message">
+                <p>Так красиво сегодня на улице! Настоящая зима)) Вспоминается Бродский:
+                    «Поздно ночью, в уснувшей долине, на самом дне, в гор
+                    <button name="read-more" class="read-more-btn">ещё</button>
+                </p>
+                <span class="timestamp">2 часа назад</span>
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-header">
+                <div class="post-author">
+                    <img class="post-profile-icon" src="images/profile-photo2.jpg" alt="">
+                    <p>Лиза Дёмина</p>
+                </div>
+            </div>
+            <div class="post-content">
+                <img src="images/photo-example6.jpg" alt="">
+            </div>
+            <button name="like" class="like-btn">
+                <i class="fa-solid fa-heart" style="color: rgb(230, 64, 33);"></i> 65
+            </button>
+            <div class="post-message">
+                <p>Some text.. </p>
+                <span class="timestamp">1 марта</span>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

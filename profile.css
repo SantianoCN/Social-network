@@ -1,0 +1,71 @@
+
+main {
+    padding-top: 72px;
+}
+
+.information-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-info {
+    text-align: center;
+    max-width: 362px;
+    gap: 10px;
+}
+
+.profile-photo {
+    width: 123px;
+    height: 123px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.profile-name {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+.profile-about-me {
+    margin-top: -12px;
+}
+
+.profile-posts-count {
+    display: inline-flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #eff2f9;
+    align-items: center;
+    border-radius: 6px;
+    padding-top: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 6px;    
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+    margin-bottom: 100px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+}
+
+.gallery-item {
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    overflow: hidden;
+    width: 322px;
+    height: 322px;
+}

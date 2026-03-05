@@ -1,0 +1,80 @@
+
+.header-title {
+    position: absolute;
+    padding: 8px;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 140px;
+    letter-spacing: -1.5px;
+    width: 385px;
+    height: 180px;
+    transform: translateY(28%);
+    color: #222222;
+    top: -50%;
+    left: -25%;
+    z-index: 10;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 107px;
+    margin-top: 10rem;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    width: 415px;
+    height: auto;
+}
+
+.img-container {
+    display: flex;
+    position: relative;
+}
+
+.login-form {
+    font-family: "Golos Text";
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    gap: 16px;
+}
+
+.input-group {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    height: 18px;
+}
+
+.login-form input {
+    font-family: "Golos Text";
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    height: 44px;
+    width: 343px;
+    background-color: #F2F3F5;
+    border-radius: 10px;
+}
+
+.login-form small {
+    color: #808080;
+}
+
+form button {
+    background-color: #222222;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: "Golos Text";
+    width: 343px;
+    height: 48px;
+    margin-top: 28px;
+}
