@@ -1,7 +1,7 @@
 # Лабораторная работа 2
 
-###Разработал: Царегородцев Никита (студент ПГТУ, ПС-13
-###Макет в [Figma](https://www.figma.com/design/r95sOLVmeginZaBxUbS2eE/%D0%A1%D0%BE%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D1%81%D0%B5%D1%82%D1%8C-%E2%80%A2-web-2025?node-id=0-1&p=f&t=jajOrSlQvJkAuJV6-0)
+##Разработал: Царегородцев Никита (студент ПГТУ, ПС-13)
+##Макет в [Figma](https://www.figma.com/design/r95sOLVmeginZaBxUbS2eE/%D0%A1%D0%BE%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D1%81%D0%B5%D1%82%D1%8C-%E2%80%A2-web-2025?node-id=0-1&p=f&t=jajOrSlQvJkAuJV6-0)
 
 ## Что использовал:
 - HTML5, CSS3
