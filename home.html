@@ -14,23 +14,23 @@
 </head>
 
 <body>
-    <nav>
-        <div class="nav-menu-item">
-            <a class="home-icon" href="/home.html"></a>
-            <div class="selected-nav-item-home"></div>
+    <nav class="nav-menu">
+        <div class="nav-menu__item">
+            <a class="nav-menu__home-icon" href="/home.html"></a>
+            <div class="nav-menu__home-icon_selected"></div>
         </div>
-        <div class="nav-menu-item">
-            <a class="profile-icon" href="/profile.html"></a>
+        <div class="nav-menu__item">
+            <a class="nav-menu__profile-icon" href="/profile.html"></a>
         </div>
-        <div class="nav-menu-item">
-            <a class="add-icon" href="#"></a>
+        <div class="nav-menu__item">
+            <a class="nav-menu__add-icon" href="#"></a>
         </div>
     </nav>
-    <main class="feed-container">
-        <div class="post">
+    <main>
+        <article class="post">
             <div class="post-header">
-                <div class="post-author">
-                    <img class="post-profile-icon" src="images/profile-photo.jpg" alt="">
+                <div class="post-header__author">
+                    <img class="post-header__profile-icon" src="images/profile-photo.jpg" alt="">
                     <p>Ваня Денисов</p>
                 </div>
                 <button>
@@ -39,38 +39,40 @@
             </div>
             <div class="post-content">
                 <img src="images/photo-example.jpg" alt="">
-                <span class="post-photo-count">1/3</span>
-                <button name="next-photo" class="post-content-next "></button>
+                <span class="post-content__photo-count">1/3</span>
+                <button class="post-content__next-photo_right" name="next-photo"></button>
             </div>
-            <button name="like" class="like-btn">
+            <button class="post-like-btn" name="like">
                 <i class="fa-solid fa-heart" style="color: rgb(230, 64, 33);"></i> 203
             </button>
             <div class="post-message">
                 <p>Так красиво сегодня на улице! Настоящая зима)) Вспоминается Бродский:
-                    «Поздно ночью, в уснувшей долине, на самом дне, в гор
-                    <button name="read-more" class="read-more-btn">ещё</button>
+                    «Поздно ночью, в уснувшей долине, на самом дне, в гор... 
+                    <button class="post-message__read-more-btn_active" name="read-more">ещё</button>
                 </p>
-                <span class="timestamp">2 часа назад</span>
+                <span class="post-timestamp">2 часа назад</span>
             </div>
-        </div>
-        <div class="post">
+        </article>
+        <article class="post">
             <div class="post-header">
-                <div class="post-author">
-                    <img class="post-profile-icon" src="images/profile-photo2.jpg" alt="">
+                <div class="post-header__author">
+                    <img class="post-header__profile-icon" src="images/profile-photo2.jpg" alt="">
                     <p>Лиза Дёмина</p>
                 </div>
             </div>
             <div class="post-content">
                 <img src="images/photo-example6.jpg" alt="">
             </div>
-            <button name="like" class="like-btn">
+            <button class="post-like-btn" name="like">
                 <i class="fa-solid fa-heart" style="color: rgb(230, 64, 33);"></i> 65
             </button>
             <div class="post-message">
-                <p>Some text.. </p>
-                <span class="timestamp">1 марта</span>
+                <p>Some text..
+                    <button class="post-message__read-more-btn_disable" name="read-more">ещё</button>
+                </p>
+                <span class="post-timestamp">1 марта</span>
             </div>
-        </div>
+        </article>
     </main>
 </body>
 
