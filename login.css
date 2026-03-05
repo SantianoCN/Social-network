@@ -1,5 +1,12 @@
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 107px;
+    margin-top: 10rem;
+    flex-grow: 1;
+}
 
-.header-title {
+.main-image__header-title {
     position: absolute;
     padding: 8px;
     font-weight: 700;
@@ -15,13 +22,6 @@
     z-index: 10;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    gap: 107px;
-    margin-top: 10rem;
-}
-
 .form-container {
     display: flex;
     justify-content: center;
@@ -29,7 +29,7 @@
     height: auto;
 }
 
-.img-container {
+.main-image {
     display: flex;
     position: relative;
 }
@@ -43,7 +43,7 @@
     gap: 16px;
 }
 
-.input-group {
+.login-form__input-group {
     gap: 5px;
     display: flex;
     flex-direction: column;

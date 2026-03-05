@@ -1,39 +1,43 @@
 
 main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     padding-top: 72px;
+    flex-grow: 1;
 }
 
-.information-container {
+.info {
     display: flex;
     justify-content: center;
 }
 
+/* информация о профиле */
 .main-info {
     text-align: center;
-    max-width: 362px;
     gap: 10px;
+    max-width: 362px;
+    margin: 0;
 }
 
-.profile-photo {
-    width: 123px;
-    height: 123px;
+.main-info__profile-photo {
     border-radius: 16px;
     object-fit: cover;
 }
 
-.profile-name {
+.main-info__profile-name {
+    font-size: 2rem;
     margin-top: 20px;
     font-weight: 500;
-    font-size: 32px;
     height: 32px;
     vertical-align: middle;
 }
 
-.profile-about-me {
+.main-info__profile-about-me {
     margin-top: -12px;
 }
 
-.profile-posts-count {
+.main-info__profile-posts-count {
     display: inline-flex;
     justify-content: center;
     gap: 10px;
@@ -48,7 +52,8 @@ main {
     padding-bottom: 6px;    
 }
 
-.gallery-container {
+/* сетка публикаций */
+.gallery {
     display: flex;
     justify-content: center;
     margin-top: 42px;
@@ -61,11 +66,9 @@ main {
     gap: 4px;
 }
 
-.gallery-item {
+.gallery-grid__gallery-item {
     display: block;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     overflow: hidden;
-    width: 322px;
-    height: 322px;
 }

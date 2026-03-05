@@ -1,15 +1,21 @@
+
+main {
+    margin-left: calc(50vw - 237px - 72px);
+    width: 474px;
+}
+
 button {
     background-color: transparent;
     border: none;
 }
 
 button:hover {
-    transform: rotateZ(-20deg)
+    transform: scale(1.2);
 }
 
-.feed-container {
-    margin-left: calc(50vw - 237px);
-    width: 474px;
+/* пост */
+.post {
+    padding-bottom: 1.6rem;
 }
 
 .post-header {
@@ -18,6 +24,13 @@ button:hover {
     font-weight: 500;
     letter-spacing: -0.15px;
     align-items: center;
+}
+
+.post-header__profile-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    object-fit: cover;
 }
 
 .post-content {
@@ -32,7 +45,7 @@ button:hover {
     object-fit: cover;
 }
 
-.post-content-next {
+.post-content__next-photo_right {    
     position: absolute;
     width: 20px;
     height: 20px;
@@ -41,11 +54,12 @@ button:hover {
     border: none;
     border-radius: 20px;
     background-image: url("/images/Vector\(1\).png");
+    background-color:rgb(214, 214, 214);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.post-photo-count {
+.post-content__photo-count {
     position: absolute;
     height: 24px;
     background-color: #22222280;
@@ -59,9 +73,14 @@ button:hover {
     right: 16px;
 }
 
-.like-btn {
+.post-message {
+    width: 100%;
+}
+
+.post-like-btn {
     width: 68px;
     height: 30px;
+    background-color: #2222220D;
     border: none;
     border-radius: 8px;
     gap: 3px;
@@ -70,28 +89,25 @@ button:hover {
     margin-top: 16px;
 }
 
-.post {
-    padding-bottom: 20px;
-}
-
-.post-message {
-    width: 100%;
-}
-
-.read-more-btn {
+.post-message__read-more-btn_active {
     font-family: "Golos Text";
     color: #808080;
     background: none;
     border: none;
 }
 
-.post-author {
+.post-message__read-more-btn_disable {
+    display: none;
+}
+
+.post-header__author {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.timestamp {
+.post-timestamp {
+    font-size: 0.875rem;
     color: #808080;
 }

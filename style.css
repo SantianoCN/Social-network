@@ -3,6 +3,8 @@ html {
 }
 
 body {
+    display: flex;
+    justify-content: start;
     margin: 0;
 }
 
@@ -15,14 +17,12 @@ main {
 }
 
 /* navigation */
-nav {
-    float: left;
-    width: 72px;
-    height: 100vh;
-    border: solid #2222220D;
+.nav-menu {
+    width: 4.5rem;
+    border-right: solid #2222220D;
 }
 
-.nav-menu-item {
+.nav-menu__item {
     margin-top: 40px;
     margin-left: 16px;
     width: 40px;
@@ -31,12 +31,12 @@ nav {
     margin-right: auto;
 }
 
-.nav-menu-item:hover {
+.nav-menu__item:hover {
     transform: scale(1.1);
 }
 
 /* css icons */
-.home-icon {
+.nav-menu__home-icon {
     display: block;
     position: relative;
     width: 20px;
@@ -52,7 +52,7 @@ nav {
     margin-right: auto;
 }
 
-.home-icon::before {
+.nav-menu__home-icon::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -66,7 +66,7 @@ nav {
     border-bottom-right-radius: 10%;
 }
 
-.home-icon::after {
+.nav-menu__home-icon::after {
     content: "";
     position: absolute;
     width: 25%;
@@ -78,7 +78,7 @@ nav {
     bottom: -3px;
 }
 
-.selected-nav-item-home {
+.nav-menu__home-icon_selected {
     content: "";
     background-color: #222222;
     width: 4px;
@@ -89,7 +89,7 @@ nav {
     margin-top: 4px;
 }
 
-.selected-nav-item-profile {
+.nav-menu__profile-icon_selected {
     content: "";
     background-color: #222222;
     width: 4px;
@@ -100,7 +100,7 @@ nav {
     margin-top: 18px;
 }
 
-.add-icon {
+.nav-menu__add-icon {
     display: block;
     position: relative;
     width: 24px;
@@ -109,8 +109,8 @@ nav {
     margin-right: auto;
 }
 
-.add-icon::before,
-.add-icon::after {
+.nav-menu__add-icon::before,
+.nav-menu__add-icon::after {
     content: "";
     position: absolute;
     background-color: #222222;
@@ -120,17 +120,17 @@ nav {
     border-radius: 4px;
 }
 
-.add-icon::before {
+.nav-menu__add-icon::before {
     width: 100%;
     height: 2px;
 }
 
-.add-icon::after {
+.nav-menu__add-icon::after {
     width: 2px;
     height: 100%;
 }
 
-.profile-icon {
+.nav-menu__profile-icon {
     display: block;
     position: relative;
     width: 8px;
@@ -141,7 +141,7 @@ nav {
     margin-right: auto;
 }
 
-.profile-icon::before {
+.nav-menu__profile-icon::before {
     content: "";
     position: absolute;
     width: 200%;
@@ -155,11 +155,4 @@ nav {
     border-top-right-radius: 6px;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
-}
-
-.post-profile-icon {
-    width: 32px;
-    height: 32px;
-    border-radius: 4px;
-    object-fit: cover;
 }
